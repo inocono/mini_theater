@@ -58,4 +58,4 @@ README〜ER図作成：8/28〆切
 https://www.figma.com/file/uKAhCLCeb0DaGxlitHP8i6/mini_theater?node-id=0%3A1
 
 ■ER図
-https://drive.google.com/file/d/17biol6_1TFJGy-PI3cLMPdqOCqHfjHqH/view?usp=sharing
+https://drive.google.com/file/d/1voWWiOhnyEglgtqfLHsuJGrFHIw8t3Fb/view?usp=sharing
