@@ -50,6 +50,11 @@ group :development do
   gem 'spring'
   # N+1問題の発生箇所を教えてくれる
   gem 'bullet'
+  # デバッグ
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # スキーマ情報をコメントしてくれる
+  gem 'annotate'
 end
 
 group :test do
