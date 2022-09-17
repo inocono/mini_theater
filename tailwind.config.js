@@ -1,4 +1,9 @@
 module.exports = {
+  content: [
+    './app/views/**/*.html.erb',
+    './app/assets/stylesheets/**/*.css',
+    './app/javascript/**/*.js'
+  ],
   purge: [
     './app/views/**/*.html.erb',
     './app/helpers/**/*.rb',
@@ -11,5 +16,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
