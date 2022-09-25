@@ -1,0 +1,16 @@
+current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220925-27391-dif23f sitelibdir\=./.gem.20220925-27391-dif23f clean
+
+current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220925-27391-dif23f sitelibdir\=./.gem.20220925-27391-dif23f
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220925-27391-dif23f sitelibdir\=./.gem.20220925-27391-dif23f install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220925-27391-dif23f
