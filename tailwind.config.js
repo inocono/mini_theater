@@ -13,4 +13,23 @@ module.exports = {
     extend: {},
   },
   plugins: [require("daisyui")],
+  theme: {
+    extend: {
+        animation: {
+            "text-focus-in": "text-focus-in 1s ease-in    "
+        },
+        keyframes: {
+            "text-focus-in": {
+                "0%": {
+                    filter: "blur(12px)",
+                    opacity: "0"
+                },
+                to: {
+                    filter: "blur(0)",
+                    opacity: "1"
+                }
+            }
+        }
+    }
+  }
 }
