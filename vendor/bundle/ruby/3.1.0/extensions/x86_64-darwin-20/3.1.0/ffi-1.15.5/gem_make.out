@@ -1,5 +1,5 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-9r6djm.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -9,10 +9,10 @@ creating extconf.h
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-80m6bs sitelibdir\=./.gem.20221013-91410-80m6bs clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-80m6bs sitelibdir\=./.gem.20221013-91410-80m6bs
 compiling AbstractMemory.c
 compiling ArrayType.c
 compiling Buffer.c
@@ -39,5 +39,5 @@ compiling ffi.c
 linking shared-object ffi_c.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20220902-78210-lj7mm4
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-80m6bs sitelibdir\=./.gem.20221013-91410-80m6bs install
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20221013-91410-80m6bs

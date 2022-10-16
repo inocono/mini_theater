@@ -13,12 +13,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /usr/local/Cellar/ruby/3.1.2/include/ruby-3.1.0
+topdir = /usr/local/Cellar/ruby/3.1.2_1/include/ruby-3.1.0
 hdrdir = $(topdir)
-arch_hdrdir = /usr/local/Cellar/ruby/3.1.2/include/ruby-3.1.0/x86_64-darwin20
+arch_hdrdir = /usr/local/Cellar/ruby/3.1.2_1/include/ruby-3.1.0/x86_64-darwin20
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/usr/local/Cellar/ruby/3.1.2
+prefix = $(DESTDIR)/usr/local/Cellar/ruby/3.1.2_1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)

@@ -1,12 +1,12 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-n9y1m.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-h7ocdk sitelibdir\=./.gem.20221013-91410-h7ocdk clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-h7ocdk sitelibdir\=./.gem.20221013-91410-h7ocdk
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -76,5 +76,5 @@ compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20220902-78210-53ps74/sassc
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-h7ocdk sitelibdir\=./.gem.20221013-91410-h7ocdk install
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20221013-91410-h7ocdk/sassc

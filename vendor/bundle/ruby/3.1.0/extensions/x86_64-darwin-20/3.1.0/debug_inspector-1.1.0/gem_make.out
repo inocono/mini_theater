@@ -1,15 +1,15 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-jstndg.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-51hbpu sitelibdir\=./.gem.20221013-91410-51hbpu clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-51hbpu sitelibdir\=./.gem.20221013-91410-51hbpu
 compiling debug_inspector.c
 linking shared-object debug_inspector.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/debug_inspector-1.1.0/ext/debug_inspector
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20220902-78210-xu254c
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-51hbpu sitelibdir\=./.gem.20221013-91410-51hbpu install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20221013-91410-51hbpu
