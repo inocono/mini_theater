@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_02_070611) do
+ActiveRecord::Schema.define(version: 2022_10_08_064853) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "areas", force: :cascade do |t|
+    t.string "name"
+    t.bigint "theater_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theater_id"], name: "index_areas_on_theater_id"
+  end
+
+  create_table "theaters", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "image"
+    t.text "description"
+    t.string "address"
+    t.string "screen"
+    t.string "seat"
+    t.text "price"
+    t.text "homepage"
+    t.text "sns"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
@@ -25,4 +49,5 @@ ActiveRecord::Schema.define(version: 2022_09_02_070611) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "areas", "theaters"
 end

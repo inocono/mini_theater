@@ -1,5 +1,5 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.6/ext/msgpack
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-lpnhum.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... no
 checking for rb_enc_interned_str() in ruby.h... yes
@@ -7,10 +7,10 @@ checking for rb_hash_new_capa() in ruby.h... no
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.6/ext/msgpack
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-w15qyc sitelibdir\=./.gem.20221013-91410-w15qyc clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.6/ext/msgpack
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-w15qyc sitelibdir\=./.gem.20221013-91410-w15qyc
 compiling buffer.c
 compiling buffer_class.c
 compiling extension_value_class.c
@@ -26,5 +26,5 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.6/ext/msgpack
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220902-78210-1gzduc/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-w15qyc sitelibdir\=./.gem.20221013-91410-w15qyc install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20221013-91410-w15qyc/msgpack

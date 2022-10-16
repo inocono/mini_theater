@@ -13,12 +13,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /usr/local/Cellar/ruby/3.1.2/include/ruby-3.1.0
+topdir = /usr/local/Cellar/ruby/3.1.2_1/include/ruby-3.1.0
 hdrdir = $(topdir)
-arch_hdrdir = /usr/local/Cellar/ruby/3.1.2/include/ruby-3.1.0/x86_64-darwin20
+arch_hdrdir = /usr/local/Cellar/ruby/3.1.2_1/include/ruby-3.1.0/x86_64-darwin20
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/usr/local/Cellar/ruby/3.1.2
+prefix = $(DESTDIR)/usr/local/Cellar/ruby/3.1.2_1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -32,8 +32,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(DESTDIR)/usr/local/lib/ruby/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20220902-78210-756s4v
-sitelibdir = $(DESTDIR)./.gem.20220902-78210-756s4v
+sitearchdir = $(sitelibdir)/$(sitearch)
+sitelibdir = $(sitedir)/$(ruby_version)
 sitedir = $(DESTDIR)/usr/local/lib/ruby/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)

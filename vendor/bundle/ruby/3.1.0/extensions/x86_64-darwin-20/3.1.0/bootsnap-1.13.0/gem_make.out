@@ -1,15 +1,15 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-61ntzh.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-2jo7xs sitelibdir\=./.gem.20221013-91410-2jo7xs clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-2jo7xs sitelibdir\=./.gem.20221013-91410-2jo7xs
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220902-78210-ul0hlt/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-2jo7xs sitelibdir\=./.gem.20221013-91410-2jo7xs install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20221013-91410-2jo7xs/bootsnap

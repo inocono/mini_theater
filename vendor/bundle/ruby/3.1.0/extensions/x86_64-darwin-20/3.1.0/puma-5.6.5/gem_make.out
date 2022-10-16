@@ -1,5 +1,5 @@
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220902-78210-z5xnmq.rb extconf.rb
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.1.0 extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -14,15 +14,15 @@ checking for Random.bytes... yes
 creating Makefile
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= clean
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-kahakv sitelibdir\=./.gem.20221013-91410-kahakv clean
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\=
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-kahakv sitelibdir\=./.gem.20221013-91410-kahakv
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
 current directory: /Users/mo/workspace/mini_theater/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20220902-78210-j6n0gu/puma
+make DESTDIR\= sitearchdir\=./.gem.20221013-91410-kahakv sitelibdir\=./.gem.20221013-91410-kahakv install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20221013-91410-kahakv/puma

@@ -34,3 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# vendor/bundleを追跡しない
+vendor/bundle
