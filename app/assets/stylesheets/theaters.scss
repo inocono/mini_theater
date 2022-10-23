@@ -1,3 +1,23 @@
-// Place all the styles related to the Theaters controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.card {
+  background-color: #fff;
+  color: #212121;
+  text-decoration: none;
+  max-width: 1000px;
+  width: 100%;
+  margin: 1rem auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.card__header {
+  color: #ffffff;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.card__text {
+  color: grey
+}

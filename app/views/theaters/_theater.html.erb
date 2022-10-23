@@ -1,0 +1,15 @@
+<div class="card col-sm-12 col-lg-4 mb-4 w-96 shadow-xl text-center">
+  <div class="card-body">
+    <div class="card__header">
+      <%= link_to "#", class: "card__title" do %>
+        <%= theater.name %>
+      <% end %>
+    </div>
+    <div class="card__body">
+      <p class="card__text"> <%= theater.address %></p><br>
+    </div>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">レビュー</button>
+    </div>
+  </div>
+</div>
