@@ -1,0 +1,11 @@
+<div class="container px-4 px-lg-5">
+  <div class="col-12">
+    <div class="row">
+      <% if @theaters.present? %>
+        <%= render @theaters %>
+      <% else %>
+        <h3>検索条件に該当するミニシアターがありませんでした。</h3>
+      <% end %>
+    </div>
+  </div>
+</div>
