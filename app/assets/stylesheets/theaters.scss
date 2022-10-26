@@ -1,9 +1,6 @@
 .card {
   background-color: #fff;
-  color: #212121;
   text-decoration: none;
-  max-width: 1000px;
-  width: 100%;
   margin: 1rem auto;
   height: auto;
   display: flex;
@@ -13,11 +10,16 @@
 }
 
 .card__header {
-  color: #ffffff;
+  color: #1E2C5C;
   font-size: 1rem;
+  font-weight: 700;
   flex-wrap: wrap;
 }
 
 .card__text {
-  color: grey
+  color: gray
+}
+
+.card-actions {
+  color: #1E2C5C;
 }
