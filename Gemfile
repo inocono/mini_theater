@@ -70,3 +70,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'sorcery'
 gem 'pry-byebug'
+
+# map 住所から緯度と経度を変換
+gem 'geocoder'
+
+# railsとjavascriptの連携
+gem 'gon'
