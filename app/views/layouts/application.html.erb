@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    
+
     <%= include_gon %>
 
     <!-- googleフォント導入 -->
@@ -31,8 +31,8 @@
   </body>
 
   <!-- google map API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcSr9BhV6P40Ws0ZwJedYj3Win9e6ArPc"
-  type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcSr9BhV6P40Ws0ZwJedYj3Win9e6ArPc&callback=initMap">
+  </script>
 
   <script>
     var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
