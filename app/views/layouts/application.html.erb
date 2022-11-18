@@ -6,6 +6,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= include_gon %>
+
     <!-- googleフォント導入 -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -14,7 +16,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -29,16 +31,8 @@
   </body>
 
   <!-- google map API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcSr9BhV6P40Ws0ZwJedYj3Win9e6ArPc"
-  type="text/javascript"></script>
-
-  <script>
-    var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
-    var Options = {
-    zoom: 15,      //地図の縮尺値
-    center: MyLatLng,    //地図の中心座標
-    mapTypeId: 'roadmap'   //地図の種類
-    };
-    var map = new google.maps.Map(document.getElementById('map'), Options);
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcSr9BhV6P40Ws0ZwJedYj3Win9e6ArPc&callback=initMap">
   </script>
+  <!-- mapに関するjavascriptファイルの読み込み -->
+  <script src="map.js"></script>
 </html>
